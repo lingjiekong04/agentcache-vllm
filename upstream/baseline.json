@@ -1,0 +1,7 @@
+{
+  "tag": "v0.8.3",
+  "sha256": "99078eb047a302bcf553aa3c84230631cd4b1288927c326a8be9c714b08faffb",
+  "url": "https://codeload.github.com/vllm-project/vllm/tar.gz/refs/tags/v0.8.3",
+  "archive_root": "vllm-0.8.3",
+  "license": "Apache-2.0"
+}

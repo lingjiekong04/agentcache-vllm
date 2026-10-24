@@ -1,0 +1,19 @@
+name: Public source and CPU contracts
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  stdlib:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -S -B tools/check_release.py
+      - run: mkdir -p reports && curl --fail --location --max-time 120 https://codeload.github.com/vllm-project/vllm/tar.gz/refs/tags/v0.8.3 --output reports/baseline.tar.gz
+      - run: python -S -B tools/run_checks.py --archive reports/baseline.tar.gz --output reports/ci-checks
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cpu-contracts
+          path: reports/ci-checks/
+# This is not Linux native pytest, a GPU test, or a performance benchmark.

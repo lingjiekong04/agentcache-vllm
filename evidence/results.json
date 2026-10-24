@@ -1,0 +1,614 @@
+{
+  "scope": "Recomputed historical aggregates; not a new GPU run",
+  "performance_conclusions_allowed": false,
+  "comparisons": {
+    "quick/scan": {
+      "paired_requests": 75,
+      "pressure_valid": true,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 131.96806982159615,
+            "p50_ms": 31.048940494656563,
+            "p95_ms": 528.8840243592858,
+            "http_service_requests_s": 7.577590559230512,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "warm": {
+            "requests": 20,
+            "mean_ms": 14.69043418765068,
+            "p50_ms": 13.416516594588757,
+            "p95_ms": 24.16719775646925,
+            "http_service_requests_s": 68.07150743309117,
+            "cache_queries": 880.0,
+            "cache_hits": 645.0,
+            "hit_ratio": 0.7329545454545454
+          },
+          "before": {
+            "requests": 5,
+            "mean_ms": 12.714023143053055,
+            "p50_ms": 13.143066316843033,
+            "p95_ms": 14.481467194855213,
+            "http_service_requests_s": 78.65330971545386,
+            "cache_queries": 220.0,
+            "cache_hits": 215.0,
+            "hit_ratio": 0.9772727272727273
+          },
+          "cold_scan": {
+            "requests": 40,
+            "mean_ms": 22.92420358862728,
+            "p50_ms": 20.88187960907817,
+            "p95_ms": 36.84433735907078,
+            "http_service_requests_s": 43.6220170586908,
+            "cache_queries": 2080.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "after": {
+            "requests": 5,
+            "mean_ms": 19.42123882472515,
+            "p50_ms": 19.14897281676531,
+            "p95_ms": 22.605912759900093,
+            "http_service_requests_s": 51.49002126099708,
+            "cache_queries": 220.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 71.34265545755625,
+            "p50_ms": 19.33521032333374,
+            "p95_ms": 284.8453298211098,
+            "http_service_requests_s": 14.016859809695871,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "warm": {
+            "requests": 20,
+            "mean_ms": 9.74130379036069,
+            "p50_ms": 9.111763443797827,
+            "p95_ms": 13.234631158411503,
+            "http_service_requests_s": 102.65566309404393,
+            "cache_queries": 880.0,
+            "cache_hits": 645.0,
+            "hit_ratio": 0.7329545454545454
+          },
+          "before": {
+            "requests": 5,
+            "mean_ms": 8.148329704999924,
+            "p50_ms": 8.175116032361984,
+            "p95_ms": 9.29996371269226,
+            "http_service_requests_s": 122.7245381819033,
+            "cache_queries": 220.0,
+            "cache_hits": 215.0,
+            "hit_ratio": 0.9772727272727273
+          },
+          "cold_scan": {
+            "requests": 40,
+            "mean_ms": 13.856909004971385,
+            "p50_ms": 13.725752010941505,
+            "p95_ms": 15.702378936111927,
+            "http_service_requests_s": 72.1661663247723,
+            "cache_queries": 2080.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "after": {
+            "requests": 5,
+            "mean_ms": 7.957618311047554,
+            "p50_ms": 8.041394874453545,
+            "p95_ms": 8.627661503851414,
+            "http_service_requests_s": 125.66574079227964,
+            "cache_queries": 220.0,
+            "cache_hits": 215.0,
+            "hit_ratio": 0.9772727272727273
+          }
+        }
+      }
+    },
+    "quick/agent": {
+      "paired_requests": 17,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 36.75370253622532,
+            "p50_ms": 12.79186736792326,
+            "p95_ms": 133.55005998164415,
+            "http_service_requests_s": 27.208143152771516,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "multi_turn": {
+            "requests": 12,
+            "mean_ms": 137.43018289096653,
+            "p50_ms": 127.8232797048986,
+            "p95_ms": 244.8798744007945,
+            "http_service_requests_s": 7.2764219545088835,
+            "cache_queries": 552.0,
+            "cache_hits": 484.0,
+            "hit_ratio": 0.8768115942028986
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 56.41597677022219,
+            "p50_ms": 23.112273775041103,
+            "p95_ms": 191.35271664708853,
+            "http_service_requests_s": 17.725475250972273,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "multi_turn": {
+            "requests": 12,
+            "mean_ms": 152.71735462980965,
+            "p50_ms": 135.27883170172572,
+            "p95_ms": 308.4144350141287,
+            "http_service_requests_s": 6.548044277115871,
+            "cache_queries": 552.0,
+            "cache_hits": 484.0,
+            "hit_ratio": 0.8768115942028986
+          }
+        }
+      }
+    },
+    "quick/shift": {
+      "paired_requests": 30,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 41.35976079851389,
+            "p50_ms": 12.679606676101685,
+            "p95_ms": 151.0465033352375,
+            "http_service_requests_s": 24.178089541463965,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "old_set": {
+            "requests": 12,
+            "mean_ms": 8.104404201731086,
+            "p50_ms": 6.837235763669014,
+            "p95_ms": 11.001643724739552,
+            "http_service_requests_s": 123.38969961374852,
+            "cache_queries": 528.0,
+            "cache_hits": 344.0,
+            "hit_ratio": 0.6515151515151515
+          },
+          "new_set": {
+            "requests": 12,
+            "mean_ms": 8.224548616756996,
+            "p50_ms": 7.131827063858509,
+            "p95_ms": 11.518643237650394,
+            "http_service_requests_s": 121.58721974876086,
+            "cache_queries": 528.0,
+            "cache_hits": 344.0,
+            "hit_ratio": 0.6515151515151515
+          },
+          "old_return": {
+            "requests": 1,
+            "mean_ms": 10.488437488675117,
+            "p50_ms": 10.488437488675117,
+            "p95_ms": 10.488437488675117,
+            "http_service_requests_s": 95.343086239466,
+            "cache_queries": 44.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 48.44598062336445,
+            "p50_ms": 21.609684452414513,
+            "p95_ms": 156.376663595438,
+            "http_service_requests_s": 20.641547289017442,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "old_set": {
+            "requests": 12,
+            "mean_ms": 10.728057706728578,
+            "p50_ms": 9.392936248332262,
+            "p95_ms": 20.79619187861681,
+            "http_service_requests_s": 93.2135179859077,
+            "cache_queries": 528.0,
+            "cache_hits": 344.0,
+            "hit_ratio": 0.6515151515151515
+          },
+          "new_set": {
+            "requests": 12,
+            "mean_ms": 15.89740525620679,
+            "p50_ms": 13.11728311702609,
+            "p95_ms": 27.547569014132023,
+            "http_service_requests_s": 62.90334704838528,
+            "cache_queries": 528.0,
+            "cache_hits": 344.0,
+            "hit_ratio": 0.6515151515151515
+          },
+          "old_return": {
+            "requests": 1,
+            "mean_ms": 28.624573722481728,
+            "p50_ms": 28.624573722481728,
+            "p95_ms": 28.624573722481728,
+            "http_service_requests_s": 34.93501806158254,
+            "cache_queries": 44.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        }
+      }
+    },
+    "quick/cold": {
+      "paired_requests": 45,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 40.52849318832159,
+            "p50_ms": 13.91568686813116,
+            "p95_ms": 146.90637681633234,
+            "http_service_requests_s": 24.673998990126606,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "cold_only": {
+            "requests": 40,
+            "mean_ms": 12.626748601906002,
+            "p50_ms": 12.448388151824474,
+            "p95_ms": 14.323603361845016,
+            "http_service_requests_s": 79.1969517670646,
+            "cache_queries": 2080.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 45.019313879311085,
+            "p50_ms": 11.798647232353687,
+            "p95_ms": 178.4317810088396,
+            "http_service_requests_s": 22.21268859585078,
+            "cache_queries": 260.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "cold_only": {
+            "requests": 40,
+            "mean_ms": 14.936245861463249,
+            "p50_ms": 13.654273003339767,
+            "p95_ms": 20.088376477360725,
+            "http_service_requests_s": 66.951227857067,
+            "cache_queries": 2080.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        }
+      }
+    },
+    "demo/scan": {
+      "paired_requests": 75,
+      "pressure_valid": true,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 312.7819560468197,
+            "p50_ms": 260.78415755182505,
+            "p95_ms": 520.9840340539813,
+            "http_service_requests_s": 3.1971153727624624,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "warm": {
+            "requests": 20,
+            "mean_ms": 64.49869340285659,
+            "p50_ms": 20.11870499700308,
+            "p95_ms": 199.91208985447884,
+            "http_service_requests_s": 15.504190042332096,
+            "cache_queries": 3840.0,
+            "cache_hits": 2865.0,
+            "hit_ratio": 0.74609375
+          },
+          "before": {
+            "requests": 5,
+            "mean_ms": 19.466007128357887,
+            "p50_ms": 19.819005392491817,
+            "p95_ms": 20.270667038857937,
+            "http_service_requests_s": 51.37160350379251,
+            "cache_queries": 960.0,
+            "cache_hits": 955.0,
+            "hit_ratio": 0.9947916666666666
+          },
+          "cold_scan": {
+            "requests": 40,
+            "mean_ms": 261.840500542894,
+            "p50_ms": 261.9146700017154,
+            "p95_ms": 265.07947221398354,
+            "http_service_requests_s": 3.8191188831621665,
+            "cache_queries": 10240.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "after": {
+            "requests": 5,
+            "mean_ms": 198.93439896404743,
+            "p50_ms": 199.15755186229944,
+            "p95_ms": 200.12224093079567,
+            "http_service_requests_s": 5.026782724393109,
+            "cache_queries": 960.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 295.1256876811385,
+            "p50_ms": 263.1230838596821,
+            "p95_ms": 424.427499063313,
+            "http_service_requests_s": 3.3883868525888063,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "warm": {
+            "requests": 20,
+            "mean_ms": 64.46731090545654,
+            "p50_ms": 20.134199410676956,
+            "p95_ms": 198.11481703072786,
+            "http_service_requests_s": 15.511737436458818,
+            "cache_queries": 3840.0,
+            "cache_hits": 2865.0,
+            "hit_ratio": 0.74609375
+          },
+          "before": {
+            "requests": 5,
+            "mean_ms": 20.16485072672367,
+            "p50_ms": 19.6421192958951,
+            "p95_ms": 22.767827846109867,
+            "http_service_requests_s": 49.591242382704074,
+            "cache_queries": 960.0,
+            "cache_hits": 955.0,
+            "hit_ratio": 0.9947916666666666
+          },
+          "cold_scan": {
+            "requests": 40,
+            "mean_ms": 262.169511965476,
+            "p50_ms": 261.87161076813936,
+            "p95_ms": 265.63534140586853,
+            "http_service_requests_s": 3.814326053792578,
+            "cache_queries": 10240.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "after": {
+            "requests": 5,
+            "mean_ms": 19.666405022144318,
+            "p50_ms": 19.78371012955904,
+            "p95_ms": 20.54997067898512,
+            "http_service_requests_s": 50.848134108598025,
+            "cache_queries": 960.0,
+            "cache_hits": 955.0,
+            "hit_ratio": 0.9947916666666666
+          }
+        }
+      }
+    },
+    "demo/agent": {
+      "paired_requests": 17,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 303.42715941369534,
+            "p50_ms": 261.9440918788314,
+            "p95_ms": 469.5685375481844,
+            "http_service_requests_s": 3.2956838864796243,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "multi_turn": {
+            "requests": 12,
+            "mean_ms": 409.66031956486404,
+            "p50_ms": 394.30745877325535,
+            "p95_ms": 578.8060631603003,
+            "http_service_requests_s": 2.441046770314946,
+            "cache_queries": 2328.0,
+            "cache_hits": 2112.0,
+            "hit_ratio": 0.9072164948453608
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 292.90842041373253,
+            "p50_ms": 262.65026815235615,
+            "p95_ms": 414.5555002614856,
+            "http_service_requests_s": 3.414036368730889,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "multi_turn": {
+            "requests": 12,
+            "mean_ms": 407.7406908230235,
+            "p50_ms": 392.3925869166851,
+            "p95_ms": 581.8707440048456,
+            "http_service_requests_s": 2.452539132117284,
+            "cache_queries": 2328.0,
+            "cache_hits": 2112.0,
+            "hit_ratio": 0.9072164948453608
+          }
+        }
+      }
+    },
+    "demo/shift": {
+      "paired_requests": 30,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 294.7634756565094,
+            "p50_ms": 262.3841632157564,
+            "p95_ms": 425.99477246403694,
+            "http_service_requests_s": 3.392550578977801,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "old_set": {
+            "requests": 12,
+            "mean_ms": 78.9020776282996,
+            "p50_ms": 21.267343312501907,
+            "p95_ms": 197.9367109015584,
+            "http_service_requests_s": 12.673937493901082,
+            "cache_queries": 2304.0,
+            "cache_hits": 1528.0,
+            "hit_ratio": 0.6631944444444444
+          },
+          "new_set": {
+            "requests": 12,
+            "mean_ms": 80.51561432269712,
+            "p50_ms": 22.491208743304014,
+            "p95_ms": 201.10069029033184,
+            "http_service_requests_s": 12.419951190984117,
+            "cache_queries": 2304.0,
+            "cache_hits": 1528.0,
+            "hit_ratio": 0.6631944444444444
+          },
+          "old_return": {
+            "requests": 1,
+            "mean_ms": 200.89063793420792,
+            "p50_ms": 200.89063793420792,
+            "p95_ms": 200.89063793420792,
+            "http_service_requests_s": 4.9778327665398825,
+            "cache_queries": 192.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 290.51121287047863,
+            "p50_ms": 261.5880277007818,
+            "p95_ms": 408.2100735977292,
+            "http_service_requests_s": 3.442207927601884,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "old_set": {
+            "requests": 12,
+            "mean_ms": 80.44911509690185,
+            "p50_ms": 22.4241241812706,
+            "p95_ms": 199.80458822101355,
+            "http_service_requests_s": 12.430217520671158,
+            "cache_queries": 2304.0,
+            "cache_hits": 1528.0,
+            "hit_ratio": 0.6631944444444444
+          },
+          "new_set": {
+            "requests": 12,
+            "mean_ms": 78.27127709363897,
+            "p50_ms": 19.688661210238934,
+            "p95_ms": 197.34409730881453,
+            "http_service_requests_s": 12.77607874985432,
+            "cache_queries": 2304.0,
+            "cache_hits": 1528.0,
+            "hit_ratio": 0.6631944444444444
+          },
+          "old_return": {
+            "requests": 1,
+            "mean_ms": 195.2382866293192,
+            "p50_ms": 195.2382866293192,
+            "p95_ms": 195.2382866293192,
+            "http_service_requests_s": 5.121946198486198,
+            "cache_queries": 192.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        }
+      }
+    },
+    "demo/cold": {
+      "paired_requests": 45,
+      "pressure_valid": null,
+      "review_required": false,
+      "summary": {
+        "lru": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 293.32764372229576,
+            "p50_ms": 262.5402770936489,
+            "p95_ms": 416.7002411559224,
+            "http_service_requests_s": 3.409157034468723,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "cold_only": {
+            "requests": 40,
+            "mean_ms": 262.70304257050157,
+            "p50_ms": 262.409292627126,
+            "p95_ms": 265.01798536628485,
+            "http_service_requests_s": 3.8065794374331627,
+            "cache_queries": 10240.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        },
+        "two_queue": {
+          "engine_warm": {
+            "requests": 5,
+            "mean_ms": 289.67613615095615,
+            "p50_ms": 261.6512989625335,
+            "p95_ms": 401.23855229467154,
+            "http_service_requests_s": 3.4521311050589256,
+            "cache_queries": 1280.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          },
+          "cold_only": {
+            "requests": 40,
+            "mean_ms": 263.45683513209224,
+            "p50_ms": 263.144567143172,
+            "p95_ms": 267.3430126160383,
+            "http_service_requests_s": 3.7956881987845144,
+            "cache_queries": 10240.0,
+            "cache_hits": 0.0,
+            "hit_ratio": 0.0
+          }
+        }
+      }
+    }
+  }
+}

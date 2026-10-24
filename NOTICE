@@ -1,0 +1,6 @@
+AgentCache - unofficial vLLM native cache policy extension.
+Based on vLLM v0.8.3, distributed under the Apache License, Version 2.0.
+Original upstream notices and SPDX identifiers are retained.
+This repository is not an official vLLM release and does not redistribute models,
+CUDA binaries, raw private logs, or an entire duplicate upstream source tree.
+Source provenance and modifications are documented in SOURCE_MAP.json and patches/.

@@ -1,0 +1,16 @@
+/build/
+/reports/
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.so
+*.safetensors
+*.ckpt
+*.log
+*.prof
+.env
+.env.*
+*.zip
+*.tar.gz
+*.bundle

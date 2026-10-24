@@ -1,0 +1,152 @@
+{
+  "source": "User supplied remote private review",
+  "source_archive_sha256": "dcd3832938306623c2a3d72042f1bbb3dc0965c7e4b2c7d474b1ec06b911163e",
+  "accepted_manifest_sha256": "c68827f0cfaf410f2e5b2fc66b5844f4fc73253cbb49e1373da955b180c55531",
+  "files": [
+    {
+      "candidate": "overlay/tests/v1/core/test_prefix_caching.py",
+      "source_member": "engineering/vllm-0.8.3/tests/v1/core/test_prefix_caching.py",
+      "sha256": "e3121ccb47f2e67ff146b92c7cabad44c1bade2afc095895da190c31d2717bbb",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/tests/v1/core/test_scheduler.py",
+      "source_member": "engineering/vllm-0.8.3/tests/v1/core/test_scheduler.py",
+      "sha256": "c4373a30cfaba98e6cdda36bf0ebe66afcb9f0eb2898be29326244248749fccd",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/config.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/config.py",
+      "sha256": "6bce05543e3c96070808f491592f247832ec51b44f0e1176775ea79aa518b4ea",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/engine/arg_utils.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/engine/arg_utils.py",
+      "sha256": "c42653a3281c2d60efe26ef70f8483d7b11656852c8588db9a5a5541b85ec76e",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/core/agentcache_identity.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/core/agentcache_identity.py",
+      "sha256": "adebe9de4e6a9c9496551744e348377769ad00a74ac59f5b85b54f8c555fa19f",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/core/block_pool.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/core/block_pool.py",
+      "sha256": "bfe71d149db2906a72aa73c274a8528ed9da9a77a0a97e10fbe5daea2d2778b4",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/core/gpu_eviction_policy.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/core/gpu_eviction_policy.py",
+      "sha256": "c4d8da8a3986a4fee47a67e2cf33459347f389fb66d6d933139490ed9bd6da6c",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/core/kv_cache_manager.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/core/kv_cache_manager.py",
+      "sha256": "9acbf61fa00c7eed5e3c89bbb2e185ef0036cb8eaf3e0c8ac7baf6c639990700",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/core/sched/scheduler.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/core/sched/scheduler.py",
+      "sha256": "407e8f072eefa9de1f093dfd32e0031ecb19ba04e8f01f3320f772d813d6960c",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/engine/core.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/engine/core.py",
+      "sha256": "a7d531f190eda7b2307b7458d574c57f18f865f6ff2c30606346436a6379c363",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/metrics/loggers.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/metrics/loggers.py",
+      "sha256": "d0322ba982dd8d80624736e6936f69dae309ab27d3fe06c31c43d2cf55cdb5f0",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/vllm/v1/metrics/stats.py",
+      "source_member": "engineering/vllm-0.8.3/vllm/v1/metrics/stats.py",
+      "sha256": "6f812e0c1ccc10a5defded792cb9385b7d6aab5c76b94d7aa90857d7d0dbf991",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/check_cpu.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/check_cpu.py",
+      "sha256": "863c7855209a7fcb9c9038684891218797719d6de1c27d647d1b5281725da745",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/check_spawn.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/check_spawn.py",
+      "sha256": "4d0202719e8ba77eff07bd6febab4ff2f2f8d9bf4e90e8668335d4b978cb1744",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/check_spawn_v2.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/check_spawn_v2.py",
+      "sha256": "23da4642d5cf4f20e5de4e37bbf8c33a0bad66ac347df94d7c99a7eda3645989",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/demo.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/demo.py",
+      "sha256": "f3f008b4906eee152fac7391ebc27006d5a0936d83a09d8e48697ce2bb6189de",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/workloads.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/workloads.py",
+      "sha256": "b1d6d54442a03c8062d2685c63a19175f4ea8d8a65c37d02f4c15e556626adb2",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/lifecycle.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/lifecycle.py",
+      "sha256": "cfe787f2c2ca7ef144a8c85b6be90c304dd62847b3023641ea5239f628a8bb46",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/prepare_runtime.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/prepare_runtime.py",
+      "sha256": "2ee05d8f6113c6b0e0785747c75d8e460fd257fb19b8c73bb72e6573f9d05c82",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/test_tools.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/test_tools.py",
+      "sha256": "e079ba586662cac131d7cf4ac303ec4690d1f150b755ac77daad6e87a6254c37",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/test_config_fix.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/test_config_fix.py",
+      "sha256": "d5be45b3a5884f9eaf8126a35c906977b925041b1e016727179ba441cdf8dc75",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/test_spawn_v2.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/test_spawn_v2.py",
+      "sha256": "0c3cfe4c4df6f87689a2e08ee150f7942c620730c385d74439c7dc9b8ff89e63",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/reference/policy.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/reference/policy.py",
+      "sha256": "c17f572d74c83695b8ff41700672cec5504d04f9700370f60832058a5e792b7f",
+      "transformation": "none"
+    },
+    {
+      "candidate": "overlay/agentcache/reference/policy_v2.py",
+      "source_member": "engineering/vllm-0.8.3/agentcache/reference/policy_v2.py",
+      "sha256": "ad2573d72a08da63f0ed25ee45424a5cd228422905a8ef993cdfa6495f23f499",
+      "transformation": "none"
+    }
+  ],
+  "note": "Only listed engine/test/tools bytes are copied unchanged; public documentation and packaging tools are new."
+}

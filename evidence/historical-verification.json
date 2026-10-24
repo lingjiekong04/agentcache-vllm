@@ -1,0 +1,185 @@
+{
+  "scope": "Independent offline re-audit of historical evidence, not fresh native/GPU execution",
+  "original_evidence_sha256": "4f74650c8659bb41914c65a734ec3468b6608b2a7f7f3318374b5d939672276e",
+  "remote_review_zip_sha256": "dcd3832938306623c2a3d72042f1bbb3dc0965c7e4b2c7d474b1ec06b911163e",
+  "native_pytest_historical": 48,
+  "native_cpu_tests_historical": 7,
+  "cpu_state_comparisons_historical": 15000,
+  "serial_requests_verified": 668,
+  "paired_serial_requests": 334,
+  "lifecycle_full_responses_verified": 84,
+  "stream_disconnects_verified": 4,
+  "performance_conclusions_allowed": false,
+  "batch_notes": {
+    "quick_serial": "A",
+    "quick_lifecycle": "A",
+    "demo_serial": "A",
+    "demo_lifecycle": "B"
+  },
+  "lifecycles": {
+    "quick-lifecycle-lru-r1": {
+      "full_responses": 21,
+      "disconnected_streams": 1,
+      "concurrent_completed": 16,
+      "pressure_completed": 4,
+      "preemptions_observed": 2.0,
+      "states": {
+        "after_concurrent": {
+          "cold_free": 255.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_cancel": {
+          "cold_free": 255.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_pressure": {
+          "cold_free": 255.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 347.0,
+          "hot_evictions": 0.0
+        }
+      }
+    },
+    "quick-lifecycle-two-queue-r1": {
+      "full_responses": 21,
+      "disconnected_streams": 1,
+      "concurrent_completed": 16,
+      "pressure_completed": 4,
+      "preemptions_observed": 2.0,
+      "states": {
+        "after_concurrent": {
+          "cold_free": 212.0,
+          "hot_free": 43.0,
+          "protected": 43.0,
+          "protected_capacity": 127.0,
+          "promotions": 43.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_cancel": {
+          "cold_free": 212.0,
+          "hot_free": 43.0,
+          "protected": 43.0,
+          "protected_capacity": 127.0,
+          "promotions": 43.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_pressure": {
+          "cold_free": 202.0,
+          "hot_free": 53.0,
+          "protected": 53.0,
+          "protected_capacity": 127.0,
+          "promotions": 96.0,
+          "demotions": 0.0,
+          "cold_evictions": 304.0,
+          "hot_evictions": 43.0
+        }
+      }
+    },
+    "demo-lifecycle-lru-r1": {
+      "full_responses": 21,
+      "disconnected_streams": 1,
+      "concurrent_completed": 16,
+      "pressure_completed": 4,
+      "preemptions_observed": 2.0,
+      "states": {
+        "after_concurrent": {
+          "cold_free": 1023.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_cancel": {
+          "cold_free": 1023.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_pressure": {
+          "cold_free": 1023.0,
+          "hot_free": 0.0,
+          "protected": 0.0,
+          "protected_capacity": 0.0,
+          "promotions": 0.0,
+          "demotions": 0.0,
+          "cold_evictions": 796.0,
+          "hot_evictions": 0.0
+        }
+      }
+    },
+    "demo-lifecycle-two-queue-r1": {
+      "full_responses": 21,
+      "disconnected_streams": 1,
+      "concurrent_completed": 16,
+      "pressure_completed": 4,
+      "preemptions_observed": 2.0,
+      "states": {
+        "after_concurrent": {
+          "cold_free": 832.0,
+          "hot_free": 191.0,
+          "protected": 191.0,
+          "protected_capacity": 511.0,
+          "promotions": 191.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_cancel": {
+          "cold_free": 832.0,
+          "hot_free": 191.0,
+          "protected": 191.0,
+          "protected_capacity": 511.0,
+          "promotions": 191.0,
+          "demotions": 0.0,
+          "cold_evictions": 0.0,
+          "hot_evictions": 0.0
+        },
+        "after_pressure": {
+          "cold_free": 708.0,
+          "hot_free": 315.0,
+          "protected": 315.0,
+          "protected_capacity": 511.0,
+          "promotions": 506.0,
+          "demotions": 0.0,
+          "cold_evictions": 605.0,
+          "hot_evictions": 191.0
+        }
+      }
+    }
+  },
+  "not_public": [
+    "raw prompts/responses",
+    "server logs",
+    "GPU UUIDs",
+    "hostnames",
+    "absolute runtime paths",
+    "original evidence archive"
+  ]
+}
